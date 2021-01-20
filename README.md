@@ -1,102 +1,33 @@
-IPP Sample Implementations
-==========================
+# Project
 
-This code provides sample implementations of IPP Clients, Printers, Proxies, and
-Systems.  It is largely based upon the [CUPS](https://www.cups.org/) software,
-with substantial changes to the original `ippproxy` and `ippserver` sample code
-to make them more general-purpose and configurable.
+> This repo has been populated by an initial template to help get you started. Please
+> make sure to update the content to build a great experience for community-building.
 
-[![Travis Build Status](https://travis-ci.org/istopwg/ippsample.svg?branch=master)](https://travis-ci.org/istopwg/ippsample)
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/0ofsfvaqk984tew9?svg=true)](https://ci.appveyor.com/project/michaelrsweet/ippsample)
-[![Snap Status](https://build.snapcraft.io/badge/istopwg/ippsample.svg)](https://build.snapcraft.io/user/istopwg/ippsample)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/istopwg/ippsample.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/istopwg/ippsample/alerts/)
-[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/istopwg/ippsample.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/istopwg/ippsample/context:cpp)
+As the maintainer of this project, please make a few updates:
 
+- Improving this README.MD file to provide a great experience
+- Updating SUPPORT.MD with content about this project's support experience
+- Understanding the security reporting process in SECURITY.MD
+- Remove this section from the README
 
-ipp3dprinter
--------------
+## Contributing
 
-The `ipp3dprinter` program implements a single IPP 3D printer and can be
-configured to use a print command to do processing of document data.
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
+When you submit a pull request, a CLA bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
 
-ippdoclint
-----------
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-The `ippdoclint` program verifies and reports on document data.  It is primarily
-used for testing IPP Clients with the `ippeveprinter` and `ippserver` programs.
+## Trademarks
 
-
-ippeveprinter
--------------
-
-The `ippeveprinter` program implements a single IPP Everywhere printer and can
-be configured to use a print command to do processing of document data.  It is
-included with the IPP Everywhere™ Printer Self-Certification tools.
-
-
-ippfind
--------
-
-The `ippfind` program implements mDNS+DNS-SD discovery of IPP printers and can
-be used to find and test specific printers.  Among other things, it is used as
-part of the IPP Everywhere™ Printer Self-Certification tools.
-
-
-ipptool
--------
-
-The `ipptool` program implements a generic IPP Client interface that allows a
-user to send different IPP requests and act based on the response from the
-Printer.  Among other things, it is used as part of the IPP Everywhere™ Printer
-Self-Certification tools.
-
-
-ippproxy
---------
-
-The `ippproxy` program implements a generic IPP Proxy interface that allows you
-to connect a local IPP or PCL printer to an IPP Infrastructure Printer such as
-the `ippserver` program.
-
-
-ippserver
----------
-
-The `ippserver` program implements the IPP System Service and provides a generic
-IPP Printer interface that allows you to host shared printers using the IPP
-Shared Infrastructure Extensions as well as support local printing or document
-processing.
-
-
-ipptransform
-------------
-
-The `ipptransform` program is a generic file conversion utility that is used
-primarily with `ippeveprinter` and `ippserver` to support rasterization of JPEG
-and PDF documents for IPP Everywhere™ and HP PCL printers.
-
-
-ipptransform3d
---------------
-
-The `ipptransform3d` program is a generic 3D file conversion utility that is
-used primarily with `ippserver` to support 3MF and G-code printing to 3D
-printers.
-
-
-Legal Stuff
------------
-
-Copyright © 2014-2019 by the IEEE-ISTO Printer Working Group.
-Copyright © 2007-2019 by Apple Inc.
-Copyright © 1997-2007 by Easy Software Products.
-
-This software is provided under the terms of the Apache License, Version 2.0.
-A copy of this license can be found in the file `LICENSE`.  Additional legal
-information is provided in the file `NOTICE`.
-
-Unless required by applicable law or agreed to in writing, software distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.  See the License for the
-specific language governing permissions and limitations under the License.
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
+trademarks or logos is subject to and must follow 
+[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
+Any use of third-party trademarks or logos are subject to those third-party's policies.
